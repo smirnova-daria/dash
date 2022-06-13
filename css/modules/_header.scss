@@ -1,8 +1,36 @@
 .header {
+	position: relative;
+	overflow: hidden;
+	&-decor {
+		position: absolute;
+		top: -880px;
+		left: 40%;
+		z-index: 1;
+		width: 2618px;
+		height: 2430px;
+	}
+	&__container {
+		position: relative;
+		z-index: 10;
+	}
 	&__top {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding: 56px 0;
+	}
+	&__subtitle {
+		margin-bottom: 60px;
+		max-width: 77%;
+	}
+	&__form {
+		margin-bottom: 210px;
+		max-width: 665px;
+	}
+	&__middle {
+		margin-top: 254px;
+	}
+	&__middle-inner {
+		max-width: 800px;
 	}
 }

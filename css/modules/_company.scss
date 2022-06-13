@@ -1,0 +1,14 @@
+.company-icon {
+	display: flex;
+	flex-direction: column;
+	row-gap: 71px;
+
+	&__pack {
+		display: flex;
+		justify-content: space-between;
+
+		img + img {
+			margin-left: 10px;
+		}
+	}
+}
