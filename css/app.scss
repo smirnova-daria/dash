@@ -1,11 +1,13 @@
 @import "./vars";
 @import "./fonts";
-@import "./modules/header";
 @import "./modules/logo";
 @import "./modules/buttons";
+@import "./modules/header";
 @import "./modules/titles";
 @import "./modules/form";
 @import "./modules/company";
+@import "./modules/animation";
+@import "./mixins/media";
 
 *,
 *::before,
