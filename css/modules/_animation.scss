@@ -29,3 +29,9 @@
 		opacity: 1;
 	}
 }
+[data-aos="fill-circle"] {
+	stroke-dasharray: 1% 136%;
+	&.aos-animate {
+		stroke-dasharray: 136% 136%;
+	}
+}

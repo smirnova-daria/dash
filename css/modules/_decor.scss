@@ -1,0 +1,24 @@
+@import "../mixins/media";
+
+.decor-circle {
+	position: absolute;
+	right: 63%;
+	top: -30%;
+	min-width: 100%;
+	height: auto;
+	transform: rotate(434deg);
+}
+.decor-circle-2 {
+	position: absolute;
+	left: 36%;
+	top: -34%;
+	min-width: 100%;
+	height: auto;
+}
+
+.decor-circle,
+.decor-circle-2 {
+	@include media(1200) {
+		display: none;
+	}
+}

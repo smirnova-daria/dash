@@ -11,6 +11,7 @@
 @import "./modules/sect";
 @import "./modules/benefits";
 @import "./modules/description";
+@import "./modules/decor";
 
 *,
 *::before,
@@ -23,7 +24,6 @@
 html,
 body {
 	min-height: 100%;
-	overflow-x: hidden;
 }
 
 body {
@@ -31,6 +31,7 @@ body {
 	font-family: Muli, sans-serif;
 	font-weight: 700;
 	color: $titleColor;
+	overflow-x: hidden;
 }
 .container {
 	max-width: 1630px;
