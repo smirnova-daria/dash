@@ -28,6 +28,9 @@
 	font-weight: 700;
 	line-height: 1.2;
 
+	@include media(1200) {
+		font-size: 40px;
+	}
 	@include media(800) {
 		font-size: 36px;
 	}

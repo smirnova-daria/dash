@@ -10,6 +10,7 @@
 @import "./mixins/media";
 @import "./modules/sect";
 @import "./modules/benefits";
+@import "./modules/description";
 
 *,
 *::before,
@@ -21,7 +22,8 @@
 
 html,
 body {
-	height: 100vh;
+	min-height: 100%;
+	overflow-x: hidden;
 }
 
 body {
