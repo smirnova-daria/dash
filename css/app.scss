@@ -8,6 +8,8 @@
 @import "./modules/company";
 @import "./modules/animation";
 @import "./mixins/media";
+@import "./modules/sect";
+@import "./modules/benefits";
 
 *,
 *::before,
@@ -32,4 +34,10 @@ body {
 	max-width: 1630px;
 	padding: 0 15px;
 	margin: 0 auto;
+}
+
+.container-inner {
+	max-width: 1160px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
