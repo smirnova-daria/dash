@@ -1,0 +1,40 @@
+@import "../vars";
+@import "../mixins/media";
+
+.page-title {
+	font-size: 75px;
+	font-weight: 900;
+	color: $titleColor;
+	line-height: 1.29;
+
+	@include media(800) {
+		font-size: 40px;
+	}
+}
+
+.page-subtitle {
+	font-size: 20px;
+	color: $mainTextColor;
+	line-height: 1.75;
+	@include media(580) {
+		font-size: 18px;
+	}
+}
+
+.sect-title {
+	font-family: Muli, sans-serif;
+	font-size: 50px;
+	color: $titleColor;
+	font-weight: 700;
+	line-height: 1.2;
+
+	@include media(1200) {
+		font-size: 40px;
+	}
+	@include media(800) {
+		font-size: 36px;
+	}
+	@include media(580) {
+		font-size: 30px;
+	}
+}

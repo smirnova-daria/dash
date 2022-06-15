@@ -1,0 +1,30 @@
+@import "../fonts";
+@import "../vars";
+
+.btn {
+	display: inline-block;
+	font-size: 23px;
+	font-family: Montserrat, sans-serif;
+	font-weight: 300;
+	background-color: $accentColor;
+	border-radius: 100px;
+	text-align: center;
+	color: #fff;
+	border: 2px solid;
+	border-color: $accentColor;
+	box-shadow: 0 30px 50px rgba(#ff5353, 0.34);
+	padding: 22px 46px;
+	min-width: 230px;
+	cursor: pointer;
+
+	&-ghost {
+		font-size: 20px;
+		font-family: Muli, sans-serif;
+		line-height: 27px;
+		background-color: transparent;
+		border-color: #fff;
+		min-width: auto;
+		box-shadow: none;
+		padding: 14px 33px;
+	}
+}

@@ -1,0 +1,35 @@
+@import "../vars";
+@import "../fonts";
+@import "../mixins/media";
+
+.form {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	column-gap: 40px;
+	row-gap: 20px;
+
+	@include media(800) {
+		grid-template: 1fr 1fr / 1fr;
+	}
+
+	&__input {
+		display: block;
+		width: 100%;
+		border: 2px solid #ebebeb;
+		border-radius: 100px;
+		font-size: 20px;
+		font-family: Montserrat, sans-serif;
+		font-weight: 300;
+		color: $mainTextColor;
+		padding: 24px 25px;
+
+		&::placeholder {
+			color: rgba(#1e1c24, 0.3);
+		}
+	}
+
+	&__btn {
+		display: block;
+		width: 100%;
+	}
+}

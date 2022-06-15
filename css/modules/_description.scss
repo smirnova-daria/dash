@@ -1,0 +1,51 @@
+@import "../vars";
+@import "../mixins/media";
+
+.description-card {
+	padding: 125px 0 160px;
+
+	@include media(800) {
+		padding: 40px 0 60px;
+	}
+	&__text,
+	&__link {
+		font-size: 18px;
+		line-height: 1.6;
+		font-family: Muli, sans-serif;
+		font-weight: 800;
+	}
+	&__title {
+		margin-bottom: 22px;
+	}
+	&__text {
+		color: $mainTextColor;
+		margin-bottom: 60px;
+		@include media(800) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__link {
+		color: $titleColor;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		&::after {
+			content: "";
+			display: inline-block;
+			width: 26px;
+			height: 12px;
+			background-image: url("../img/icons/arrow-right.svg");
+			background-position: center;
+			background-repeat: no-repeat;
+			margin-left: 15px;
+			transition: transform 0.3s ease 0s;
+		}
+
+		&:hover {
+			&::after {
+				transform: translateX(15px);
+			}
+		}
+	}
+}

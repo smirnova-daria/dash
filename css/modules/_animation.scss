@@ -1,0 +1,37 @@
+@import "../node_modules/aos/dist/aos.css";
+
+.svg-animate-box {
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+[data-aos="c-rotate"] {
+	opacity: 0;
+	transform: translateY(700px) rotate(500deg);
+	transform-box: fill-box;
+	transform-origin: center;
+	transition-property: transform, opacity;
+
+	&.aos-animate {
+		transform: translateY(0) rotate(0);
+		opacity: 1;
+	}
+}
+
+[data-aos="fill-right"] {
+	transform: scaleX(0);
+	opacity: 0;
+	transform-box: fill-box;
+	transform-origin: left;
+
+	&.aos-animate {
+		transform: scaleX(1);
+		opacity: 1;
+	}
+}
+[data-aos="fill-circle"] {
+	stroke-dasharray: 1% 136%;
+	&.aos-animate {
+		stroke-dasharray: 136% 136%;
+	}
+}

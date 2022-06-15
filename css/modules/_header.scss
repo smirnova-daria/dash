@@ -1,0 +1,73 @@
+@import "../mixins/media";
+
+.header {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 233px;
+
+	@include media(800) {
+		padding-bottom: 100px;
+	}
+	@include media(580) {
+		padding-bottom: 60px;
+	}
+	&-decor {
+		position: absolute;
+		top: -880px;
+		left: 40%;
+		z-index: 1;
+		width: 2618px;
+		height: 2430px;
+		@include media(800) {
+			display: none;
+		}
+	}
+	&__container {
+		position: relative;
+		z-index: 10;
+	}
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 56px 0;
+		@include media(800) {
+			padding: 10px 0;
+		}
+	}
+	&__top-btn {
+		@include media(800) {
+			border-color: $accentColor;
+			color: $accentColor;
+		}
+	}
+	&__title {
+		margin-bottom: 20px;
+	}
+	&__subtitle {
+		margin-bottom: 60px;
+		max-width: 77%;
+	}
+	&__form {
+		margin-bottom: 210px;
+		max-width: 665px;
+		@include media(800) {
+			margin-bottom: 100px;
+		}
+		@include media(580) {
+			margin-bottom: 60px;
+		}
+	}
+	&__middle {
+		margin-top: 254px;
+		@include media(800) {
+			margin-top: 100px;
+		}
+		@include media(580) {
+			margin-top: 60px;
+		}
+	}
+	&__middle-inner {
+		max-width: 800px;
+	}
+}

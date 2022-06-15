@@ -1,15 +1,51 @@
-*, *::before, *::after {
+@import "./vars";
+@import "./fonts";
+@import "./modules/logo";
+@import "./modules/buttons";
+@import "./modules/header";
+@import "./modules/titles";
+@import "./modules/form";
+@import "./modules/company";
+@import "./modules/animation";
+@import "./mixins/media";
+@import "./modules/sect";
+@import "./modules/benefits";
+@import "./modules/description";
+@import "./modules/decor";
+@import "./modules/reviews";
+@import "./modules/footer";
+
+*,
+*::before,
+*::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-html, body {
-	height: 100vh;
+html,
+body {
+	min-height: 100%;
 }
 
 body {
 	font-size: 16px;
-	font-family: sans-serif;
-	color: #212121;
+	font-family: Muli, sans-serif;
+	font-weight: 700;
+	color: $titleColor;
+	overflow-x: hidden;
+}
+.container {
+	max-width: 1630px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.container-inner {
+	max-width: 1160px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.out {
+	overflow: hidden;
 }
