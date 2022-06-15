@@ -31,3 +31,18 @@
 	src: url(../fonts/Muliitalic.woff) format("woff"), url(../fonts/Muliitalic.woff2) format("woff2");
 	font-display: swap;
 }
+
+@font-face {
+	font-family: Muli;
+	font-weight: 400;
+	font-style: normal;
+	src: url(../fonts/Muliregular.woff) format("woff"), url(../fonts/Muliregular.woff2) format("woff2");
+	font-display: swap;
+}
+@font-face {
+	font-family: Muli;
+	font-weight: 300;
+	font-style: normal;
+	src: url(../fonts/Mulilight.woff) format("woff"), url(../fonts/Mulilight.woff2) format("woff2");
+	font-display: swap;
+}

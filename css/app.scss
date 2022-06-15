@@ -12,6 +12,8 @@
 @import "./modules/benefits";
 @import "./modules/description";
 @import "./modules/decor";
+@import "./modules/reviews";
+@import "./modules/footer";
 
 *,
 *::before,
@@ -43,4 +45,7 @@ body {
 	max-width: 1160px;
 	margin: 0 auto;
 	padding: 0 15px;
+}
+.out {
+	overflow: hidden;
 }

@@ -22,3 +22,12 @@
 		display: none;
 	}
 }
+
+.decor-7 {
+	position: absolute;
+	bottom: -50%;
+	left: 66%;
+	@include media(1200) {
+		display: none;
+	}
+}

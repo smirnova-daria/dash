@@ -1,5 +1,9 @@
 @import "../mixins/media";
 
+.sect {
+	position: relative;
+	z-index: 1;
+}
 .sect-benefits {
 	&__sect-title {
 		max-width: 787px;
@@ -9,6 +13,9 @@
 }
 
 .sect-description {
+	&-first {
+		z-index: 2;
+	}
 	&__inner {
 		display: flex;
 		margin: 0 -15px;
@@ -76,5 +83,17 @@
 	&__image-4 {
 		top: 215px;
 		z-index: 2;
+	}
+}
+
+.sect-reviews {
+	padding-top: 30px;
+	z-index: 3;
+
+	@include media-min(800) {
+		padding-top: 296px;
+	}
+	&__sect-title {
+		text-align: center;
 	}
 }
